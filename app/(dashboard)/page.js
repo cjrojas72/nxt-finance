@@ -1,14 +1,14 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { SignOutButton } from "@clerk/nextjs";
+import Header from "@/components/ui/header/header";
+import { WelcomeMsg } from "@/components/ui/welcome-msg/welcome-msg";
 
 export default function Home() {
   return (
     <>
-      <h1>Dashboard. This should be authenticated </h1>
-      <SignOutButton>
-        <Button variant="outline">Sign out</Button>
-      </SignOutButton>
+      <Header />
+      <div>
+        <WelcomeMsg />
+      </div>
     </>
   );
     
