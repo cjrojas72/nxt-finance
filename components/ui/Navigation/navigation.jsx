@@ -47,7 +47,7 @@ export const Navigation = () =>{
                     <nav className="flex flex-col gap-y-2 pt-6">
 
                         <div className="flex justify-center">
-                            <UserButton/>
+                            <UserButton afterSignOutUrl="/"/>
                         </div>
                         {routes.map( route => (
                             <Button
@@ -79,7 +79,7 @@ export const Navigation = () =>{
             ))}
 
             <div className="ml-10">
-                <UserButton showName="true"/>
+                <UserButton showName="true" afterSignOutUrl="/"/>
 
                 <SignOutButton>
                     <Button className="border-solid border-2 border-white bg-transparent ml-5">Sign out</Button>
